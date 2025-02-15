@@ -1,36 +1,15 @@
 {
-  "name": "web-tritri",
-  "version": "1.0.0",
-  "description": "Trinity Trio&#39;s Web site",
-  "author": "sKawashima",
-  "private": true,
+  "name": "trinity-trio",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "rm -rf docs && rm -rf _nuxt && nuxt generate && cp -pR ./docs/_nuxt ./ && cp -pR ./docs/200.html ./ && cp -pR ./docs/favicon.ico ./ && cp -pR ./docs/index.html ./ && git status",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "yarn lint",
-    "deploy": "yarn generate && git add . && git commit -m deploy && git push"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
-    "nuxt": "^1.0.0",
-    "reset-css": "^4.0.1"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "cross-env": "^5.0.1",
-    "eslint": "^5.0.1",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^4.7.1",
-    "node-sass": "^4.9.3",
-    "pug": "^3.0.1",
-    "sass-loader": "^7.1.0"
+    "astro": "^5.3.0",
+    "sass": "^1.85.0"
   }
 }
