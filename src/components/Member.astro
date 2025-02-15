@@ -1,0 +1,86 @@
+---
+---
+
+<div id="member">
+  <div id="CHARLII_k" class="item">
+    <img src="/memberCHARLII_k.svg" alt="CHARLII_k" />
+    <p>CHARLII_k</p>
+  </div>
+  <div id="ryu-g" class="item">
+    <img src="/memberryu-g.svg" alt="ryu-g" />
+    <p>ryu-g</p>
+  </div>
+  <div id="by_sK" class="item">
+    <img src="/memberby_sK.svg" alt="by_sK" />
+    <p>by_sK</p>
+  </div>
+</div>
+
+<style lang="scss">
+@use "sass:color";
+#member {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: .92fr 1fr .94fr;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: none;
+    grid-template-rows: .92fr 1fr .90fr;
+  }
+}
+
+#CHARLII_k {
+  background-color: #FFCC00;
+  color: #FFCC00;
+}
+
+#ryu-g {
+  background-color: #E95513;
+  color: #E95513;
+}
+
+#by_sK {
+  background-color: color.adjust(#4e1a68, $lightness: 25%);
+  color: color.adjust(#4e1a68, $lightness: 25%);
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    bottom: -1rem;
+    height: 100vh;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+      transition: none;
+      top: -70vh;
+      bottom: auto;
+      height: 220vh;
+      left: 25%;
+    }
+  }
+
+  p {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #000;
+    padding: 0 .2em .2em;
+    height: 1em;
+
+    @media screen and (max-width: 768px) {
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+</style>
