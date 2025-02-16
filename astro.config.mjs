@@ -4,5 +4,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   outDir: './docs',
   site: 'https://trinity-trio.github.io',
-  base: '/',
+  base: '/web',
 });

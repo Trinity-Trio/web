@@ -1,9 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import motionLogo from '../assets/motionlogo.gif';
+import loading from '../assets/loading.svg';
 ---
 
 <div id="topView">
-  <img class="logo" src="/motionlogo.gif" alt="Motion Logo" />
-  <img class="guide" src="/loading.svg" alt="Loading" />
+  <Image class="logo" src={motionLogo} alt="Motion Logo" />
+  <Image class="guide" src={loading} alt="Loading" />
 </div>
 
 <style lang="scss">

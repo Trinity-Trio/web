@@ -1,11 +1,17 @@
 <!doctype html>
-<html lang="en">
+---
+import { Image } from 'astro:assets';
+import favicon from '../assets/logo.svg';
+---
+
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href={favicon.src} />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="description" content="Trinity Trio's Web site" />
+		<title>Trinity Trio</title>
 	</head>
 	<body>
 		<slot />

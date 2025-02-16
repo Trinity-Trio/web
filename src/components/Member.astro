@@ -1,17 +1,21 @@
 ---
+import { Image } from 'astro:assets';
+import memberCHARLII from '../assets/memberCHARLII_k.svg';
+import memberRyu from '../assets/memberryu-g.svg';
+import memberSK from '../assets/memberby_sK.svg';
 ---
 
 <div id="member">
   <div id="CHARLII_k" class="item">
-    <img src="/memberCHARLII_k.svg" alt="CHARLII_k" />
+    <Image src={memberCHARLII} alt="CHARLII_k" />
     <p>CHARLII_k</p>
   </div>
   <div id="ryu-g" class="item">
-    <img src="/memberryu-g.svg" alt="ryu-g" />
+    <Image src={memberRyu} alt="ryu-g" />
     <p>ryu-g</p>
   </div>
   <div id="by_sK" class="item">
-    <img src="/memberby_sK.svg" alt="by_sK" />
+    <Image src={memberSK} alt="by_sK" />
     <p>by_sK</p>
   </div>
 </div>
