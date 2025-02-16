@@ -16,9 +16,9 @@ npm i -g yarn
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:4321
 $ yarn dev
-# 開くURLは http://localhost:3000/web/
+# 開くURLは http://localhost:4321/web/
 
 # how to deploy
 $ yarn deploy
