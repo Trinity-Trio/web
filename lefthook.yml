@@ -2,5 +2,5 @@ pre-commit:
   parallel: true
   commands:
     build:
-      run: pnpm biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git add {staged_files} && yarn build && git add docs
+      run: yarn biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git add {staged_files} && yarn build && git add docs
       skip_empty: false
