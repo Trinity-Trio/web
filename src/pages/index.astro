@@ -1,15 +1,16 @@
 ---
-import '../styles/reset.css';
-import TopView from '../components/TopView.astro';
-import Member from '../components/Member.astro';
-import About from '../components/About.astro';
-import Works from '../components/Works.astro';
+import '../styles/reset.css'
+import TopView from '../components/TopView.astro'
+import Member from '../components/Member.astro'
+import About from '../components/About.astro'
+import Works from '../components/Works.astro'
+import favicon from '../assets/favicon.ico'
 ---
 
 <html lang="ja">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href={favicon} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Trinity Trio's Web site" />
@@ -27,6 +28,6 @@ import Works from '../components/Works.astro';
 	body {
 		margin: 0;
 		padding: 0;
-		background-color: #03635B;
+		background-color: #03635b;
 	}
 </style>
