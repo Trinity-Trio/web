@@ -1,5 +1,6 @@
 pre-commit:
+  parallel: true
   commands:
     build:
-      glob: "**/*"
       run: yarn build
+      skip_empty: false
