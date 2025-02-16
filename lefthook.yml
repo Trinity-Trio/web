@@ -2,5 +2,5 @@ pre-commit:
   parallel: true
   commands:
     build:
-      run: yarn build
+      run: yarn build && git add docs
       skip_empty: false
