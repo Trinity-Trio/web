@@ -14,23 +14,11 @@ npm i -g yarn
 
 ``` bash
 # install dependencies
-$ yarn install
+$ yarn
 
 # serve with hot reload at localhost:4321
 $ yarn dev
 # 開くURLは http://localhost:4321/web/
-
-# how to deploy
-$ yarn deploy
-# or npm run deploy
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-
-## 今回は使用しないが、Nodeサーバーを立てて動かすときにやること
-
-``` bash
-# build for production and launch server
-$ yarn run build
-$ yarn start
-```
+コンテンツの追加はそのファイルごとにコメントで記述する。
